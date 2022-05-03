@@ -19,6 +19,7 @@ namespace Lotto
                     
                                 int randnum = random.Next(1,50);
                                 //instead of tempnum, you can use arrList in the while for the numbers not to repeat.
+                                //You can instead of this while condition use while(tempnum.Contains(randnum)){
                                 while (tempnum.Where(x => x.Equals(randnum)).Count()>0)
                                 {
                                     randnum = random.Next(1,50);
